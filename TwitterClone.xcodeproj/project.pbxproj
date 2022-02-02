@@ -17,6 +17,7 @@
 		465F04BA27AA4A36000F043F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04B927AA4A36000F043F /* HomeScreen.swift */; };
 		465F04BC27AA52B8000F043F /* SearchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04BB27AA52B8000F043F /* SearchScreen.swift */; };
 		465F04BE27AA52C4000F043F /* MessageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04BD27AA52C4000F043F /* MessageScreen.swift */; };
+		465F04C427AA6E6E000F043F /* PKTweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04C327AA6E6E000F043F /* PKTweetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		465F04B927AA4A36000F043F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		465F04BB27AA52B8000F043F /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
 		465F04BD27AA52C4000F043F /* MessageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreen.swift; sourceTree = "<group>"; };
+		465F04C327AA6E6E000F043F /* PKTweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKTweetCell.swift; path = ../../../../../../../../Documents/PKTweetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +140,8 @@
 		465F04BF27AA5812000F043F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				465F04C227AA6E54000F043F /* Home */,
 				46216EA427A7DD75001A7129 /* ContentView.swift */,
-				465F04B927AA4A36000F043F /* HomeScreen.swift */,
 				465F04BB27AA52B8000F043F /* SearchScreen.swift */,
 				465F04BD27AA52C4000F043F /* MessageScreen.swift */,
 			);
@@ -158,6 +160,15 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		465F04C227AA6E54000F043F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				465F04B927AA4A36000F043F /* HomeScreen.swift */,
+				465F04C327AA6E6E000F043F /* PKTweetCell.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +305,7 @@
 				46216EA327A7DD75001A7129 /* TwitterCloneApp.swift in Sources */,
 				465F04BA27AA4A36000F043F /* HomeScreen.swift in Sources */,
 				465F04BC27AA52B8000F043F /* SearchScreen.swift in Sources */,
+				465F04C427AA6E6E000F043F /* PKTweetCell.swift in Sources */,
 				465F04BE27AA52C4000F043F /* MessageScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
