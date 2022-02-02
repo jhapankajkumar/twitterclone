@@ -23,7 +23,7 @@ struct ContentView: View {
                         Text("Search")
                     }
                 
-                MessageScreen()
+                PKMessageListView()
                     .tabItem {
                         Image(systemName: "envelope")
                         Text("Messages")

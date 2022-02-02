@@ -20,6 +20,13 @@
 		465F04C427AA6E6E000F043F /* PKTweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04C327AA6E6E000F043F /* PKTweetCell.swift */; };
 		465F04C727AA918C000F043F /* PKSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04C627AA918C000F043F /* PKSearchBar.swift */; };
 		465F04C927AA9748000F043F /* PKSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04C827AA9748000F043F /* PKSearchCell.swift */; };
+		465F04CC27AA9FB6000F043F /* PKMessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04CB27AA9FB6000F043F /* PKMessageListView.swift */; };
+		465F04CE27AA9FE7000F043F /* PKMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04CD27AA9FE7000F043F /* PKMessageCell.swift */; };
+		465F04D227AAA6AE000F043F /* PKFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04D127AAA6AE000F043F /* PKFloatingButton.swift */; };
+		465F04D427AAAF07000F043F /* PKMessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04D327AAAF07000F043F /* PKMessageInputView.swift */; };
+		465F04D627AAB026000F043F /* PKChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04D527AAB026000F043F /* PKChatView.swift */; };
+		465F04D827AAB3F9000F043F /* PKChatBubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04D727AAB3F9000F043F /* PKChatBubbleShape.swift */; };
+		465F04DA27AAB88C000F043F /* PKMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04D927AAB88C000F043F /* PKMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +63,13 @@
 		465F04C327AA6E6E000F043F /* PKTweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKTweetCell.swift; path = ../../../../../../../../Documents/PKTweetCell.swift; sourceTree = "<group>"; };
 		465F04C627AA918C000F043F /* PKSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKSearchBar.swift; path = ../../../../../../../../Documents/PKSearchBar.swift; sourceTree = "<group>"; };
 		465F04C827AA9748000F043F /* PKSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKSearchCell.swift; path = ../../../../../../../../Documents/PKSearchCell.swift; sourceTree = "<group>"; };
+		465F04CB27AA9FB6000F043F /* PKMessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKMessageListView.swift; path = ../../../../../../../../Documents/PKMessageListView.swift; sourceTree = "<group>"; };
+		465F04CD27AA9FE7000F043F /* PKMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKMessageCell.swift; path = ../../../../../../../../Documents/PKMessageCell.swift; sourceTree = "<group>"; };
+		465F04D127AAA6AE000F043F /* PKFloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKFloatingButton.swift; path = ../../../../../../../../Documents/PKFloatingButton.swift; sourceTree = "<group>"; };
+		465F04D327AAAF07000F043F /* PKMessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKMessageInputView.swift; path = ../../../../../../../../Documents/PKMessageInputView.swift; sourceTree = "<group>"; };
+		465F04D527AAB026000F043F /* PKChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKChatView.swift; path = ../../../../../../../../Documents/PKChatView.swift; sourceTree = "<group>"; };
+		465F04D727AAB3F9000F043F /* PKChatBubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKChatBubbleShape.swift; path = ../../../../../../../../Documents/PKChatBubbleShape.swift; sourceTree = "<group>"; };
+		465F04D927AAB88C000F043F /* PKMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKMessage.swift; path = ../../../../../../../Documents/PKMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,7 @@
 		46216EA127A7DD75001A7129 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				465F04CF27AAA698000F043F /* Common */,
 				465F04C127AA5859000F043F /* ViewModels */,
 				465F04C027AA581C000F043F /* Model */,
 				465F04BF27AA5812000F043F /* View */,
@@ -144,10 +159,10 @@
 		465F04BF27AA5812000F043F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				465F04CA27AA9F02000F043F /* Message */,
 				465F04C527AA9066000F043F /* Search */,
 				465F04C227AA6E54000F043F /* Home */,
 				46216EA427A7DD75001A7129 /* ContentView.swift */,
-				465F04BD27AA52C4000F043F /* MessageScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +170,7 @@
 		465F04C027AA581C000F043F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				465F04D927AAB88C000F043F /* PKMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +199,35 @@
 				465F04C827AA9748000F043F /* PKSearchCell.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		465F04CA27AA9F02000F043F /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				465F04BD27AA52C4000F043F /* MessageScreen.swift */,
+				465F04CB27AA9FB6000F043F /* PKMessageListView.swift */,
+				465F04CD27AA9FE7000F043F /* PKMessageCell.swift */,
+				465F04D327AAAF07000F043F /* PKMessageInputView.swift */,
+				465F04D527AAB026000F043F /* PKChatView.swift */,
+				465F04D727AAB3F9000F043F /* PKChatBubbleShape.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		465F04CF27AAA698000F043F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				465F04D027AAA69D000F043F /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		465F04D027AAA69D000F043F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				465F04D127AAA6AE000F043F /* PKFloatingButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,14 +360,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465F04DA27AAB88C000F043F /* PKMessage.swift in Sources */,
 				46216EA527A7DD75001A7129 /* ContentView.swift in Sources */,
 				46216EA327A7DD75001A7129 /* TwitterCloneApp.swift in Sources */,
+				465F04D427AAAF07000F043F /* PKMessageInputView.swift in Sources */,
+				465F04CC27AA9FB6000F043F /* PKMessageListView.swift in Sources */,
 				465F04C727AA918C000F043F /* PKSearchBar.swift in Sources */,
 				465F04BA27AA4A36000F043F /* HomeView.swift in Sources */,
+				465F04D227AAA6AE000F043F /* PKFloatingButton.swift in Sources */,
 				465F04BC27AA52B8000F043F /* SearchView.swift in Sources */,
 				465F04C427AA6E6E000F043F /* PKTweetCell.swift in Sources */,
 				465F04C927AA9748000F043F /* PKSearchCell.swift in Sources */,
+				465F04CE27AA9FE7000F043F /* PKMessageCell.swift in Sources */,
 				465F04BE27AA52C4000F043F /* MessageScreen.swift in Sources */,
+				465F04D827AAB3F9000F043F /* PKChatBubbleShape.swift in Sources */,
+				465F04D627AAB026000F043F /* PKChatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

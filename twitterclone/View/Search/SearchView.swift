@@ -12,6 +12,7 @@ struct SearchView: View {
     var body: some View {
         ScrollView {
             PKSearchBar(text: $text)
+                .padding(.top, 20)
             VStack (alignment: .leading, spacing: 0) {
                 ForEach(0..<10) { _ in
                     HStack { Spacer() }

@@ -22,21 +22,9 @@ struct HomeView: View {
                     }
                 }
             }
-//            isLabelHidden == false ? Text("Hey! I am visible") : Text("")
-            Button {
-                print("Button Tapped")
-                isLabelHidden = !isLabelHidden
-            } label: {
-                Image("tweet")
-                    .resizable()
-                    .renderingMode(.template)
-                    .frame(width: 30, height: 30, alignment: .center)
-                    .padding()
+            PKFloatingButton(title: "", imageName: "tweet", isSystemImage: false) {
+                print("Tweet Button Tapped")
             }
-            .background(Color(.systemBlue))
-            .foregroundColor(.white)
-            .clipShape(Circle())
-            .padding()
             
         }.navigationTitle("Home")
     }
