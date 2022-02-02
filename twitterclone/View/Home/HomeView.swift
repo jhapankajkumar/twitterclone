@@ -1,5 +1,5 @@
 //
-//  HomeScreen.swift
+//  HomeView.swift
 //  TwitterClone
 //
 //  Created by Pankaj Kumar Jha on 2/2/22.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct HomeScreen: View {
+struct HomeView: View {
     let title: String
-    var isLabelHidden = true
+    @State var isLabelHidden = true
     init(title: String) {
         self.title = title
     }
@@ -22,9 +22,10 @@ struct HomeScreen: View {
                     }
                 }
             }
-            
+//            isLabelHidden == false ? Text("Hey! I am visible") : Text("")
             Button {
                 print("Button Tapped")
+                isLabelHidden = !isLabelHidden
             } label: {
                 Image("tweet")
                     .resizable()
@@ -45,8 +46,8 @@ struct HomeScreen: View {
     }
 }
 
-struct HomeScreen_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeScreen(title: "Welcome Home")
+        HomeView(title: "Welcome Home")
     }
 }

@@ -11,13 +11,13 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView {
-                HomeScreen(title: "Home")
+                HomeView(title: "Home")
                     .tabItem {
                     Image(systemName: "house")
                     Text("Home")
                     }
                 
-                SearchScreen()
+                SearchView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Search")
