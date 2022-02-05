@@ -14,12 +14,20 @@
 		46216EB427A7DD76001A7129 /* TwitterCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216EB327A7DD76001A7129 /* TwitterCloneTests.swift */; };
 		46216EBE27A7DD76001A7129 /* TwitterCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216EBD27A7DD76001A7129 /* TwitterCloneUITests.swift */; };
 		46216EC027A7DD76001A7129 /* TwitterCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216EBF27A7DD76001A7129 /* TwitterCloneUITestsLaunchTests.swift */; };
-		465F04BA27AA4A36000F043F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04B927AA4A36000F043F /* HomeView.swift */; };
-		465F04BC27AA52B8000F043F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04BB27AA52B8000F043F /* SearchView.swift */; };
-		465F04BE27AA52C4000F043F /* MessageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04BD27AA52C4000F043F /* MessageScreen.swift */; };
+		465F04BA27AA4A36000F043F /* PKHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04B927AA4A36000F043F /* PKHomeView.swift */; };
+		465F04BC27AA52B8000F043F /* PKSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04BB27AA52B8000F043F /* PKSearchView.swift */; };
 		465F04C427AA6E6E000F043F /* PKTweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04C327AA6E6E000F043F /* PKTweetCell.swift */; };
 		465F04C727AA918C000F043F /* PKSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04C627AA918C000F043F /* PKSearchBar.swift */; };
-		465F04C927AA9748000F043F /* PKSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04C827AA9748000F043F /* PKSearchCell.swift */; };
+		465F04C927AA9748000F043F /* PKUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04C827AA9748000F043F /* PKUserCell.swift */; };
+		465F04CC27AA9FB6000F043F /* PKMessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04CB27AA9FB6000F043F /* PKMessageListView.swift */; };
+		465F04CE27AA9FE7000F043F /* PKMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04CD27AA9FE7000F043F /* PKMessageCell.swift */; };
+		465F04D227AAA6AE000F043F /* PKFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04D127AAA6AE000F043F /* PKFloatingButton.swift */; };
+		465F04D427AAAF07000F043F /* PKMessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04D327AAAF07000F043F /* PKMessageInputView.swift */; };
+		465F04D627AAB026000F043F /* PKChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04D527AAB026000F043F /* PKChatView.swift */; };
+		465F04D827AAB3F9000F043F /* PKChatBubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04D727AAB3F9000F043F /* PKChatBubbleShape.swift */; };
+		465F04DA27AAB88C000F043F /* PKMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04D927AAB88C000F043F /* PKMessage.swift */; };
+		46C3A89427AE545200A43D15 /* PKMessageViewBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3A89327AE545200A43D15 /* PKMessageViewBubble.swift */; };
+		46C3A89627AE557400A43D15 /* PKNewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3A89527AE557400A43D15 /* PKNewMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,12 +58,20 @@
 		46216EB927A7DD76001A7129 /* TwitterCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46216EBD27A7DD76001A7129 /* TwitterCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneUITests.swift; sourceTree = "<group>"; };
 		46216EBF27A7DD76001A7129 /* TwitterCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		465F04B927AA4A36000F043F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		465F04BB27AA52B8000F043F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		465F04BD27AA52C4000F043F /* MessageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageScreen.swift; sourceTree = "<group>"; };
+		465F04B927AA4A36000F043F /* PKHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKHomeView.swift; sourceTree = "<group>"; };
+		465F04BB27AA52B8000F043F /* PKSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKSearchView.swift; sourceTree = "<group>"; };
 		465F04C327AA6E6E000F043F /* PKTweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKTweetCell.swift; path = ../../../../../../../../Documents/PKTweetCell.swift; sourceTree = "<group>"; };
 		465F04C627AA918C000F043F /* PKSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKSearchBar.swift; path = ../../../../../../../../Documents/PKSearchBar.swift; sourceTree = "<group>"; };
-		465F04C827AA9748000F043F /* PKSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKSearchCell.swift; path = ../../../../../../../../Documents/PKSearchCell.swift; sourceTree = "<group>"; };
+		465F04C827AA9748000F043F /* PKUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKUserCell.swift; path = ../../../../../../../../Documents/PKUserCell.swift; sourceTree = "<group>"; };
+		465F04CB27AA9FB6000F043F /* PKMessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKMessageListView.swift; path = ../../../../../../../../Documents/PKMessageListView.swift; sourceTree = "<group>"; };
+		465F04CD27AA9FE7000F043F /* PKMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKMessageCell.swift; path = ../../../../../../../../Documents/PKMessageCell.swift; sourceTree = "<group>"; };
+		465F04D127AAA6AE000F043F /* PKFloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKFloatingButton.swift; path = ../../../../../../../../Documents/PKFloatingButton.swift; sourceTree = "<group>"; };
+		465F04D327AAAF07000F043F /* PKMessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKMessageInputView.swift; path = ../../../../../../../../Documents/PKMessageInputView.swift; sourceTree = "<group>"; };
+		465F04D527AAB026000F043F /* PKChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKChatView.swift; path = ../../../../../../../../Documents/PKChatView.swift; sourceTree = "<group>"; };
+		465F04D727AAB3F9000F043F /* PKChatBubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKChatBubbleShape.swift; path = ../../../../../../../../Documents/PKChatBubbleShape.swift; sourceTree = "<group>"; };
+		465F04D927AAB88C000F043F /* PKMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKMessage.swift; path = ../../../../../../../Documents/PKMessage.swift; sourceTree = "<group>"; };
+		46C3A89327AE545200A43D15 /* PKMessageViewBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKMessageViewBubble.swift; sourceTree = "<group>"; };
+		46C3A89527AE557400A43D15 /* PKNewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKNewMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +122,7 @@
 		46216EA127A7DD75001A7129 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				465F04CF27AAA698000F043F /* Common */,
 				465F04C127AA5859000F043F /* ViewModels */,
 				465F04C027AA581C000F043F /* Model */,
 				465F04BF27AA5812000F043F /* View */,
@@ -144,10 +161,10 @@
 		465F04BF27AA5812000F043F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				465F04CA27AA9F02000F043F /* Message */,
 				465F04C527AA9066000F043F /* Search */,
 				465F04C227AA6E54000F043F /* Home */,
 				46216EA427A7DD75001A7129 /* ContentView.swift */,
-				465F04BD27AA52C4000F043F /* MessageScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +172,7 @@
 		465F04C027AA581C000F043F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				465F04D927AAB88C000F043F /* PKMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,7 +187,7 @@
 		465F04C227AA6E54000F043F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				465F04B927AA4A36000F043F /* HomeView.swift */,
+				465F04B927AA4A36000F043F /* PKHomeView.swift */,
 				465F04C327AA6E6E000F043F /* PKTweetCell.swift */,
 			);
 			path = Home;
@@ -178,11 +196,41 @@
 		465F04C527AA9066000F043F /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				465F04BB27AA52B8000F043F /* SearchView.swift */,
+				465F04BB27AA52B8000F043F /* PKSearchView.swift */,
 				465F04C627AA918C000F043F /* PKSearchBar.swift */,
-				465F04C827AA9748000F043F /* PKSearchCell.swift */,
+				465F04C827AA9748000F043F /* PKUserCell.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		465F04CA27AA9F02000F043F /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				465F04CB27AA9FB6000F043F /* PKMessageListView.swift */,
+				465F04CD27AA9FE7000F043F /* PKMessageCell.swift */,
+				465F04D327AAAF07000F043F /* PKMessageInputView.swift */,
+				465F04D527AAB026000F043F /* PKChatView.swift */,
+				465F04D727AAB3F9000F043F /* PKChatBubbleShape.swift */,
+				46C3A89327AE545200A43D15 /* PKMessageViewBubble.swift */,
+				46C3A89527AE557400A43D15 /* PKNewMessageView.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		465F04CF27AAA698000F043F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				465F04D027AAA69D000F043F /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		465F04D027AAA69D000F043F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				465F04D127AAA6AE000F043F /* PKFloatingButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,14 +363,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				465F04DA27AAB88C000F043F /* PKMessage.swift in Sources */,
 				46216EA527A7DD75001A7129 /* ContentView.swift in Sources */,
 				46216EA327A7DD75001A7129 /* TwitterCloneApp.swift in Sources */,
+				465F04D427AAAF07000F043F /* PKMessageInputView.swift in Sources */,
+				465F04CC27AA9FB6000F043F /* PKMessageListView.swift in Sources */,
 				465F04C727AA918C000F043F /* PKSearchBar.swift in Sources */,
-				465F04BA27AA4A36000F043F /* HomeView.swift in Sources */,
-				465F04BC27AA52B8000F043F /* SearchView.swift in Sources */,
+				46C3A89627AE557400A43D15 /* PKNewMessageView.swift in Sources */,
+				465F04BA27AA4A36000F043F /* PKHomeView.swift in Sources */,
+				465F04D227AAA6AE000F043F /* PKFloatingButton.swift in Sources */,
+				465F04BC27AA52B8000F043F /* PKSearchView.swift in Sources */,
 				465F04C427AA6E6E000F043F /* PKTweetCell.swift in Sources */,
-				465F04C927AA9748000F043F /* PKSearchCell.swift in Sources */,
-				465F04BE27AA52C4000F043F /* MessageScreen.swift in Sources */,
+				46C3A89427AE545200A43D15 /* PKMessageViewBubble.swift in Sources */,
+				465F04C927AA9748000F043F /* PKUserCell.swift in Sources */,
+				465F04CE27AA9FE7000F043F /* PKMessageCell.swift in Sources */,
+				465F04D827AAB3F9000F043F /* PKChatBubbleShape.swift in Sources */,
+				465F04D627AAB026000F043F /* PKChatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

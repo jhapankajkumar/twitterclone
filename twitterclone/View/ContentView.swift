@@ -11,19 +11,19 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView {
-                HomeView(title: "Home")
+                PKHomeView(title: "Home")
                     .tabItem {
                     Image(systemName: "house")
                     Text("Home")
                     }
                 
-                SearchView()
+                PKSearchView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Search")
                     }
                 
-                MessageScreen()
+                PKMessageListView()
                     .tabItem {
                         Image(systemName: "envelope")
                         Text("Messages")
