@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  PKHomeView.swift
 //  TwitterClone
 //
 //  Created by Pankaj Kumar Jha on 2/2/22.
@@ -7,12 +7,9 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct PKHomeView: View {
     let title: String
     @State var isLabelHidden = true
-    init(title: String) {
-        self.title = title
-    }
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             ScrollView {
@@ -36,6 +33,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(title: "Welcome Home")
+        PKHomeView(title: "Welcome Home")
     }
 }

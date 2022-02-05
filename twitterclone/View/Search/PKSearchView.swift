@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SearchView: View {
+struct PKSearchView: View {
     @State var text: String = ""
     var body: some View {
         ScrollView {
@@ -16,7 +16,7 @@ struct SearchView: View {
             VStack (alignment: .leading, spacing: 0) {
                 ForEach(0..<10) { _ in
                     HStack { Spacer() }
-                    PKSearchCell()
+                    PKUserCell()
                 }
             }.padding(.leading)
         }
@@ -25,6 +25,6 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        PKSearchView()
     }
 }
