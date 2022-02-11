@@ -16,7 +16,9 @@ struct PKSearchView: View {
             VStack (alignment: .leading, spacing: 0) {
                 ForEach(0..<10) { _ in
                     HStack { Spacer() }
-                    PKUserCell()
+                    NavigationLink(destination: PKUserProfileView(), label: {
+                        PKUserCell().foregroundColor(.black)
+                    })
                 }
             }.padding(.leading)
         }
