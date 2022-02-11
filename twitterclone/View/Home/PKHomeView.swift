@@ -10,6 +10,7 @@ import SwiftUI
 struct PKHomeView: View {
     let title: String
     @State var isLabelHidden = true
+    @State var isShowingTweetView: Bool = false
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
             ScrollView {
@@ -20,7 +21,11 @@ struct PKHomeView: View {
                 }
             }
             PKFloatingButton(title: "", imageName: "tweet", isSystemImage: false) {
-                print("Tweet Button Tapped")
+                isShowingTweetView.toggle()
+            }.fullScreenCover(isPresented: $isShowingTweetView) {
+                print("Dismissed")
+            } content: {
+                PKNewTweetView(isPresented: $isShowingTweetView)
             }
             
         }.navigationTitle("Home")

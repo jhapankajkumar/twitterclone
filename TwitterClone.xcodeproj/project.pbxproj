@@ -28,6 +28,8 @@
 		46216EB427A7DD76001A7129 /* TwitterCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216EB327A7DD76001A7129 /* TwitterCloneTests.swift */; };
 		46216EBE27A7DD76001A7129 /* TwitterCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216EBD27A7DD76001A7129 /* TwitterCloneUITests.swift */; };
 		46216EC027A7DD76001A7129 /* TwitterCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216EBF27A7DD76001A7129 /* TwitterCloneUITestsLaunchTests.swift */; };
+		462D7B3D27B6090400499807 /* PKNewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D7B3C27B6090400499807 /* PKNewTweetView.swift */; };
+		462D7B3F27B61A8900499807 /* PKTextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D7B3E27B61A8900499807 /* PKTextArea.swift */; };
 		465F04BA27AA4A36000F043F /* PKHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04B927AA4A36000F043F /* PKHomeView.swift */; };
 		465F04BC27AA52B8000F043F /* PKSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465F04BB27AA52B8000F043F /* PKSearchView.swift */; };
 		46C3A89427AE545200A43D15 /* PKMessageViewBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3A89327AE545200A43D15 /* PKMessageViewBubble.swift */; };
@@ -76,6 +78,8 @@
 		46216EB927A7DD76001A7129 /* TwitterCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46216EBD27A7DD76001A7129 /* TwitterCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneUITests.swift; sourceTree = "<group>"; };
 		46216EBF27A7DD76001A7129 /* TwitterCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		462D7B3C27B6090400499807 /* PKNewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKNewTweetView.swift; path = twitterclone/View/Tweets/PKNewTweetView.swift; sourceTree = SOURCE_ROOT; };
+		462D7B3E27B61A8900499807 /* PKTextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKTextArea.swift; sourceTree = "<group>"; };
 		465F04B927AA4A36000F043F /* PKHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKHomeView.swift; sourceTree = "<group>"; };
 		465F04BB27AA52B8000F043F /* PKSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKSearchView.swift; sourceTree = "<group>"; };
 		46C3A89327AE545200A43D15 /* PKMessageViewBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKMessageViewBubble.swift; sourceTree = "<group>"; };
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				4607E59F27B384B100F99EA5 /* PKFloatingButton.swift */,
+				462D7B3E27B61A8900499807 /* PKTextArea.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,9 +207,18 @@
 			path = TwitterCloneUITests;
 			sourceTree = "<group>";
 		};
+		462D7B3B27B608AA00499807 /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				462D7B3C27B6090400499807 /* PKNewTweetView.swift */,
+			);
+			path = Tweets;
+			sourceTree = "<group>";
+		};
 		465F04BF27AA5812000F043F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				462D7B3B27B608AA00499807 /* Tweets */,
 				4607E5A227B3B51600F99EA5 /* Profile */,
 				465F04CA27AA9F02000F043F /* Message */,
 				465F04C527AA9066000F043F /* Search */,
@@ -381,6 +395,7 @@
 				4607E58827B3839B00F99EA5 /* PKTweetCell.swift in Sources */,
 				4607E59227B3845400F99EA5 /* PKChatBubbleShape.swift in Sources */,
 				4607E5AA27B3B6E100F99EA5 /* PKFIlterButtonView.swift in Sources */,
+				462D7B3F27B61A8900499807 /* PKTextArea.swift in Sources */,
 				4607E5A827B3B6D000F99EA5 /* PKProfileActionButtonView.swift in Sources */,
 				4607E58C27B383C200F99EA5 /* PKSearchBar.swift in Sources */,
 				4607E5A427B3B52F00F99EA5 /* PKUserProfileView.swift in Sources */,
@@ -397,6 +412,7 @@
 				46C3A89427AE545200A43D15 /* PKMessageViewBubble.swift in Sources */,
 				4607E59627B3845400F99EA5 /* PKMessageCell.swift in Sources */,
 				4607E59327B3845400F99EA5 /* PKChatView.swift in Sources */,
+				462D7B3D27B6090400499807 /* PKNewTweetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
