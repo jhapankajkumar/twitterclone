@@ -17,6 +17,10 @@
 		4607E59627B3845400F99EA5 /* PKMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4607E59127B3845400F99EA5 /* PKMessageCell.swift */; };
 		4607E5A027B384B100F99EA5 /* PKMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4607E59C27B384B100F99EA5 /* PKMessage.swift */; };
 		4607E5A127B384B100F99EA5 /* PKFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4607E59F27B384B100F99EA5 /* PKFloatingButton.swift */; };
+		4607E5A427B3B52F00F99EA5 /* PKUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4607E5A327B3B52F00F99EA5 /* PKUserProfileView.swift */; };
+		4607E5A627B3B6C200F99EA5 /* PKProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4607E5A527B3B6C200F99EA5 /* PKProfileHeaderView.swift */; };
+		4607E5A827B3B6D000F99EA5 /* PKProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4607E5A727B3B6D000F99EA5 /* PKProfileActionButtonView.swift */; };
+		4607E5AA27B3B6E100F99EA5 /* PKFIlterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4607E5A927B3B6E100F99EA5 /* PKFIlterButtonView.swift */; };
 		46216EA327A7DD75001A7129 /* TwitterCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216EA227A7DD75001A7129 /* TwitterCloneApp.swift */; };
 		46216EA527A7DD75001A7129 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46216EA427A7DD75001A7129 /* ContentView.swift */; };
 		46216EA727A7DD76001A7129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46216EA627A7DD76001A7129 /* Assets.xcassets */; };
@@ -58,6 +62,10 @@
 		4607E59127B3845400F99EA5 /* PKMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PKMessageCell.swift; path = twitterclone/View/Message/PKMessageCell.swift; sourceTree = SOURCE_ROOT; };
 		4607E59C27B384B100F99EA5 /* PKMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKMessage.swift; sourceTree = "<group>"; };
 		4607E59F27B384B100F99EA5 /* PKFloatingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKFloatingButton.swift; sourceTree = "<group>"; };
+		4607E5A327B3B52F00F99EA5 /* PKUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKUserProfileView.swift; path = twitterclone/View/Profile/PKUserProfileView.swift; sourceTree = SOURCE_ROOT; };
+		4607E5A527B3B6C200F99EA5 /* PKProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKProfileHeaderView.swift; path = twitterclone/View/Profile/PKProfileHeaderView.swift; sourceTree = SOURCE_ROOT; };
+		4607E5A727B3B6D000F99EA5 /* PKProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKProfileActionButtonView.swift; path = twitterclone/View/Profile/PKProfileActionButtonView.swift; sourceTree = SOURCE_ROOT; };
+		4607E5A927B3B6E100F99EA5 /* PKFIlterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PKFIlterButtonView.swift; path = twitterclone/View/Profile/PKFIlterButtonView.swift; sourceTree = SOURCE_ROOT; };
 		46216E9F27A7DD75001A7129 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46216EA227A7DD75001A7129 /* TwitterCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterCloneApp.swift; sourceTree = "<group>"; };
 		46216EA427A7DD75001A7129 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +133,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4607E5A227B3B51600F99EA5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4607E5A327B3B52F00F99EA5 /* PKUserProfileView.swift */,
+				4607E5A527B3B6C200F99EA5 /* PKProfileHeaderView.swift */,
+				4607E5A727B3B6D000F99EA5 /* PKProfileActionButtonView.swift */,
+				4607E5A927B3B6E100F99EA5 /* PKFIlterButtonView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		46216E9627A7DD75001A7129 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +205,7 @@
 		465F04BF27AA5812000F043F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4607E5A227B3B51600F99EA5 /* Profile */,
 				465F04CA27AA9F02000F043F /* Message */,
 				465F04C527AA9066000F043F /* Search */,
 				465F04C227AA6E54000F043F /* Home */,
@@ -360,7 +380,10 @@
 				4607E5A027B384B100F99EA5 /* PKMessage.swift in Sources */,
 				4607E58827B3839B00F99EA5 /* PKTweetCell.swift in Sources */,
 				4607E59227B3845400F99EA5 /* PKChatBubbleShape.swift in Sources */,
+				4607E5AA27B3B6E100F99EA5 /* PKFIlterButtonView.swift in Sources */,
+				4607E5A827B3B6D000F99EA5 /* PKProfileActionButtonView.swift in Sources */,
 				4607E58C27B383C200F99EA5 /* PKSearchBar.swift in Sources */,
+				4607E5A427B3B52F00F99EA5 /* PKUserProfileView.swift in Sources */,
 				46216EA527A7DD75001A7129 /* ContentView.swift in Sources */,
 				46216EA327A7DD75001A7129 /* TwitterCloneApp.swift in Sources */,
 				4607E58B27B383C200F99EA5 /* PKUserCell.swift in Sources */,
@@ -368,6 +391,7 @@
 				4607E59427B3845400F99EA5 /* PKMessageInputView.swift in Sources */,
 				465F04BA27AA4A36000F043F /* PKHomeView.swift in Sources */,
 				4607E59527B3845400F99EA5 /* PKMessageListView.swift in Sources */,
+				4607E5A627B3B6C200F99EA5 /* PKProfileHeaderView.swift in Sources */,
 				465F04BC27AA52B8000F043F /* PKSearchView.swift in Sources */,
 				4607E5A127B384B100F99EA5 /* PKFloatingButton.swift in Sources */,
 				46C3A89427AE545200A43D15 /* PKMessageViewBubble.swift in Sources */,
@@ -539,6 +563,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -568,6 +593,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

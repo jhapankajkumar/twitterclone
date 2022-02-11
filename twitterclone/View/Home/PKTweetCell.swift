@@ -27,10 +27,10 @@ struct PKTweetCell: View {
                     VStack(alignment: .leading, spacing: 0) {
                         HStack {
                             //Name
-                            Text("Pankaj Kumar Jha").font(.system(size: 14, weight: .semibold, design: .default))
+                            Text("Pankaj Kumar Jha").font(.system(size: 14, weight: .semibold, design: .default)).lineLimit(1)
                             
                             //Id
-                            Text("@appstack21 •").foregroundColor(.gray).font(.system(size: 14, weight: .regular, design: .default))
+                            Text("@appstack21 •").foregroundColor(.gray).font(.system(size: 14, weight: .regular, design: .default)).lineLimit(1)
                             
                             //Date Posted
                             Text("1d").foregroundColor(.gray).font(.system(size: 14, weight: .regular, design: .default))
