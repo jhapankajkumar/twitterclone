@@ -25,7 +25,8 @@ struct PKHomeView: View {
             }.fullScreenCover(isPresented: $isShowingTweetView) {
                 print("Dismissed")
             } content: {
-                PKNewTweetView(isPresented: $isShowingTweetView)
+                PKLoginView()
+                //PKNewTweetView(isPresented: $isShowingTweetView)
             }
             
         }.navigationTitle("Home")
