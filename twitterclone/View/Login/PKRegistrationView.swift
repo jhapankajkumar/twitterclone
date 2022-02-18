@@ -107,6 +107,10 @@ struct PKRegistrationView: View {
                     debugPrint(email)
                     debugPrint(password)
                     //Call login api
+                    if let selectedImage = selectedImage {
+                        PKAuthViewModel().register(email: email, password: password, fullName: fullName, userName: userName, profilePhoto: selectedImage)
+                    }
+                    
                 } label: {
                     Text("Sign Up")
                         .font(.headline)

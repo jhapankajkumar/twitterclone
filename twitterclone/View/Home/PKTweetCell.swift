@@ -6,17 +6,14 @@
 //
 
 import SwiftUI
-
+import Kingfisher
 struct PKTweetCell: View {
-    let tweet: String
-    init(tweet: String) {
-        self.tweet = tweet
-    }
+    let tweet: PKTweet
     var body: some View {
         VStack {
             
             HStack(alignment: .top, spacing: 0) {
-                Image("batman")
+                KFImage(URL(string: tweet.profileImageUrl ?? ""))
                     .resizable()
                     .frame(width: 56, height: 56, alignment: .center)
                     .clipShape(Circle())
@@ -27,10 +24,10 @@ struct PKTweetCell: View {
                     VStack(alignment: .leading, spacing: 0) {
                         HStack {
                             //Name
-                            Text("Pankaj Kumar Jha").font(.system(size: 14, weight: .semibold, design: .default)).lineLimit(1)
+                            Text(tweet.fullName ?? "").font(.system(size: 14, weight: .semibold, design: .default)).lineLimit(1)
                             
                             //Id
-                            Text("@appstack21 •").foregroundColor(.gray).font(.system(size: 14, weight: .regular, design: .default)).lineLimit(1)
+                            Text("@\(tweet.username ?? "")•").foregroundColor(.gray).font(.system(size: 14, weight: .regular, design: .default)).lineLimit(1)
                             
                             //Date Posted
                             Text("1d").foregroundColor(.gray).font(.system(size: 14, weight: .regular, design: .default))
@@ -40,7 +37,7 @@ struct PKTweetCell: View {
                         }.padding([.bottom], 8).clipped()
                         
                         //Description
-                        Text("As the Biden Administration continues to mass release illegal immigrants across the country, House Democrats.").foregroundColor(.black)
+                        Text(tweet.tweet ?? "").foregroundColor(.black)
                     }.padding([.bottom], 16)
                     //Buttons
                     HStack(alignment: .center, spacing: 0) {
@@ -97,7 +94,7 @@ struct PKTweetCell: View {
 
 struct PKTweetCell_Previews: PreviewProvider {
     static var previews: some View {
-        PKTweetCell(tweet: "1")
+        PKTweetCell(tweet: PKTweet())
     }
 }
 

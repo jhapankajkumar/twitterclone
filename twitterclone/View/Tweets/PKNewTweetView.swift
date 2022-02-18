@@ -10,6 +10,7 @@ import SwiftUI
 struct PKNewTweetView: View {
     @Binding var isPresented: Bool
     @State var tweet: String = ""
+    @ObservedObject var tweetViewModel = PKTweetViewModel()
     var body: some View {
         NavigationView {
             VStack {
@@ -37,6 +38,7 @@ struct PKNewTweetView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         debugPrint(tweet)
+                        tweetViewModel.postTweet(tweet: tweet)
                     } label: {
                         Text("Tweet")
                             .padding(.horizontal)

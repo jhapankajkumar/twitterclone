@@ -6,29 +6,77 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: PKAuthViewModel
     var body: some View {
-        NavigationView {
-            TabView {
-                PKHomeView(title: "Home")
-                    .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
+        Group {
+            if viewModel.userSession != nil {
+                NavigationView {
+                    TabView {
+                        PKHomeView(title: "Home")
+                            .tabItem {
+                                Image(systemName: "house")
+                                Text("Home")
+                            }
+                        
+                        PKSearchView()
+                            .tabItem {
+                                Image(systemName: "magnifyingglass")
+                                Text("Search")
+                            }
+                        
+                        PKMessageListView()
+                            .tabItem {
+                                Image(systemName: "envelope")
+                                Text("Messages")
+                            }
                     }
-                
-                PKSearchView()
-                    .tabItem {
-                        Image(systemName: "magnifyingglass")
-                        Text("Search")
+                    .navigationTitle("Home")
+//                    .navigationBarItems(leading: Button(action: {
+//
+//                    }, label: {
+//                        KFImage(URL(string: viewModel.user?.profileImageUrl ?? ""))
+//                            .resizable().scaledToFill().clipShape(Circle())
+//                            .frame(width: 32, height: 32, alignment: .center)
+//
+//                    }))
+//                    .navigationBarItems(trailing: Button(action: {
+//
+//                    }, label: {
+//                        Text()
+//
+//                    }))
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Button {
+                                
+                            } label: {
+                                KFImage(URL(string: viewModel.user?.profileImageUrl ?? ""))
+                                                            .resizable().scaledToFill().clipShape(Circle())
+                                                            .frame(width: 32, height: 32, alignment: .center)
+                            }
+                        }
+                        
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button {
+                                viewModel.signOut()
+                            } label: {
+                                Text("Logout")
+                                    .padding(.horizontal)
+                                    .padding(.vertical, 8)
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .clipShape(Capsule())
+                            }
+                        }
                     }
-                
-                PKMessageListView()
-                    .tabItem {
-                        Image(systemName: "envelope")
-                        Text("Messages")
-                    }
-            }.navigationBarTitleDisplayMode(.inline)
+                    .navigationBarTitleDisplayMode(.inline)
+                }
+            } else {
+                PKLoginView()
+            }
         }
     }
 }

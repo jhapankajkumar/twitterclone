@@ -11,6 +11,7 @@ struct PKLoginView: View {
     @State var email: String = ""
     @State var password: String = ""
     @State var isRegistrationPresented: Bool = false
+    @EnvironmentObject var viewModel: PKAuthViewModel
     var body: some View {
         NavigationView {
             ZStack {
@@ -64,6 +65,7 @@ struct PKLoginView: View {
                         debugPrint("Sign In Button Tapped")
                         debugPrint(email)
                         debugPrint(password)
+                        viewModel.login(email: email, password: password)
                         //Call login api
                     } label: {
                         Text("Sign In")

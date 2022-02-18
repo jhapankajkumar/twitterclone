@@ -9,22 +9,29 @@ import SwiftUI
 
 struct PKUserProfileView: View {
     @State var selectedOption: PKTweetFilterOptions = .tweets
+    @ObservedObject var viewModel: PKProfileViewModel
+    init(viewModel: PKProfileViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
         ScrollView {
             VStack {
-                PKProfileHeaderView()
-                PKProfileActionButtonView(isCurrentUser: true).padding([.bottom], 16)
+                PKProfileHeaderView(viewModel: viewModel)
+                PKProfileActionButtonView(viewModel: viewModel, isFollowed: $viewModel.isFollowed).padding([.bottom], 16)
                 PKFIlterButtonView(selectionOption: $selectedOption).padding([.top])
-                ForEach(0..<10) { (index) in
-                    PKTweetCell(tweet: "\(index + 1)")
+                ForEach(viewModel.tweets) { (tweet) in
+                    PKTweetCell(tweet: tweet)
                 }
             }
+        }.onAppear {
+           // viewModel.fetchTweets(userId: viewModel)
         }
     }
 }
 
 struct PKUserProfile_Previews: PreviewProvider {
     static var previews: some View {
-        PKUserProfileView()
+        PKUserProfileView(viewModel: PKProfileViewModel(user: PKUser()))
     }
 }

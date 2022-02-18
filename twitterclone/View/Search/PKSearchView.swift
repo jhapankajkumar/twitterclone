@@ -9,20 +9,22 @@ import SwiftUI
 
 struct PKSearchView: View {
     @State var text: String = ""
+    @ObservedObject var searchViewModel = PKSearchViewModel()
     var body: some View {
         ScrollView {
             PKSearchBar(text: $text)
                 .padding(.top, 20)
-            VStack (alignment: .leading, spacing: 0) {
-                ForEach(0..<10) { _ in
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(searchViewModel.users, id: \.self) { user in // show received results
                     HStack { Spacer() }
-                    NavigationLink(destination: PKUserProfileView(), label: {
-                        PKUserCell().foregroundColor(.black)
+                    NavigationLink(destination: PKUserProfileView(viewModel: PKProfileViewModel(user: user)), label: {
+                        PKUserCell(user: user).foregroundColor(.black)
                     })
                 }
             }.padding(.leading)
         }
     }
+    
 }
 
 struct SearchView_Previews: PreviewProvider {

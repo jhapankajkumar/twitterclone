@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-
+import Kingfisher
 struct PKProfileHeaderView: View {
+    let viewModel: PKProfileViewModel
     var body: some View {
         VStack {
             ZStack {
-                Image("batman")
+                KFImage(URL(string: viewModel.user.profileImageUrl ?? ""))
                     .resizable()
                     .scaledToFill()
                     .frame(width: 120, height: 120, alignment: .center)
@@ -21,11 +22,11 @@ struct PKProfileHeaderView: View {
                 .clipShape(Circle())
                 .shadow(color: .gray, radius: 10, x: 2, y: 2)
             
-            Text("Bruce Wyne")
+            Text(viewModel.user.fullName ?? "")
                 .font(.system(size: 14, weight: .semibold))
                 .foregroundColor(.black)
                 .padding(.bottom, 0)
-            Text("@batman")
+            Text("@\(viewModel.user.username ?? "")")
                 .padding(.bottom)
                 .font(.subheadline)
                 .foregroundColor(.gray)
@@ -57,6 +58,6 @@ struct PKProfileHeaderView: View {
 
 struct PKProfileHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        PKProfileHeaderView()
+        PKProfileHeaderView(viewModel: PKProfileViewModel(user: PKUser()))
     }
 }

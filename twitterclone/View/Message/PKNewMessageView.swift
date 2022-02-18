@@ -11,21 +11,22 @@ struct PKNewMessageView: View {
     @State var text: String = ""
     @Binding var show: Bool
     @Binding var startChat: Bool
-     
+    
+    @ObservedObject var searchViewModel = PKSearchViewModel()
+    
     var body: some View {
         ScrollView {
             PKSearchBar(text: $text)
                 .padding(.top, 20)
             VStack (alignment: .leading, spacing: 0) {
-                ForEach(0..<10) { _ in
+                ForEach(searchViewModel.users) { user in
                     HStack { Spacer() }
                     Button {
                         self.show.toggle()
                         self.startChat.toggle()
                     } label: {
-                        PKUserCell().foregroundColor(.black)
+                        PKUserCell(user: user).foregroundColor(.black)
                     }
-                    
                 }
             }
             .padding(.leading)
